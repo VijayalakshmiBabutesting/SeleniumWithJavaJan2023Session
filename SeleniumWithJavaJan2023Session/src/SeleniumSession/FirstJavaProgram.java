@@ -1,5 +1,5 @@
 //Jan 9-2023-P1
-package FirstSession;
+package SeleniumSession;
 /**
  * 
  * @author mchugh
@@ -16,6 +16,7 @@ public class FirstJavaProgram {
 		 * multi line comments
 		 */
 		System.out.println("Hi");
+		
 		
 	}
 
