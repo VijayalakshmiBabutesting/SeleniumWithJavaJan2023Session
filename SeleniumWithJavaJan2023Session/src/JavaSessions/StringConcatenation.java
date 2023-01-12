@@ -1,5 +1,5 @@
 //Jan 11-2023-P1
-package TestPackage;
+package JavaSessions;
 
 public class StringConcatenation {
 

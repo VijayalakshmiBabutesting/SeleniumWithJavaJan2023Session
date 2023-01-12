@@ -101,10 +101,25 @@ public class DataTypes {
 		 System.out.println(manish);
 		 
 		 //8. String -> String is not a data type. Its a class in Java
-//		 String str="Hello World";
-//		 System.out.println(str);
-//		 
 		 
+		 String str="Hello World";
+		 System.out.println(str);
+		 
+		 String str1="100";
+		 System.out.println(str1);
+		 
+		 System.out.println(str+str1);//Hello World100 ->concatenation operator
+		 System.out.println(1000);
+		 System.out.println("Hello Selenium");
+		 System.out.println("str");
+		 System.out.println(10+20);//30
+		 System.out.println("testing" +100);//testing100
+		 System.out.println("hello"+" "+"World");//helloWorld
+		 
+		 System.out.print(80+"\n");
+		 System.out.println(60);
+		 
+		 System.err.println("some error is coming");
 		 
 		 
 		 
