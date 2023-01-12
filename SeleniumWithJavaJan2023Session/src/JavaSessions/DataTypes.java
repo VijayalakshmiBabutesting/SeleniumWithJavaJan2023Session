@@ -1,5 +1,5 @@
 //Jan10-2023-P1
-package SeleniumSession;
+package JavaSessions;
 /**
  * 
  * @author mchugh
@@ -99,6 +99,12 @@ public class DataTypes {
 		 boolean flag=false;
 		 System.out.println(flag);
 		 System.out.println(manish);
+		 
+		 //8. String -> String is not a data type. Its a class in Java
+//		 String str="Hello World";
+//		 System.out.println(str);
+//		 
+		 
 		 
 		 
 		 

@@ -1,5 +1,5 @@
 //Jan 9-2023-P1
-package SeleniumSession;
+package JavaSessions;
 /**
  * 
  * @author mchugh
