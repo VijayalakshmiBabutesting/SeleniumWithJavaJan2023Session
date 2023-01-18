@@ -121,6 +121,9 @@ public class DataTypes {
 		 
 		 System.err.println("some error is coming");
 		 
+		 System.out.println(4/2);
+		 System.out.println(4%2);
+		 
 		 
 		 
 	}
