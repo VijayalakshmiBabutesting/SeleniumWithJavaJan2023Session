@@ -16,6 +16,7 @@ public class LoopsConcept {
 		
 		System.out.println("----------");
 		// loops
+		
 		// 1. While
 		int i=1;//initialization
 		while(i<=10) //condition
@@ -24,6 +25,7 @@ public class LoopsConcept {
 			i++;//increments the value of i by 1
 		}
 		System.out.println("----------");
+		
 		//2. do while loop
 		int n=11;//initialization
 		do {
@@ -38,8 +40,11 @@ public class LoopsConcept {
 		{
 			System.out.println(k);
 		}
+		//run infinite times 
+		
 		System.out.println("----------");
-		//3. even numbers : 0 2 4 6 8 10
+		
+		//4. even numbers : 0 2 4 6 8 10
 		
 		for(int even=0; even<=10; even+=2) {
 			System.out.println(even);
@@ -64,7 +69,6 @@ public class LoopsConcept {
 				System.out.println("hello");
 			}
 		}
-		
 		System.out.println("----------");
 		
 		for(char c='a'; c<='z'; c++) {
@@ -81,30 +85,12 @@ public class LoopsConcept {
 			System.out.println("double -->" +d);
 		}
 		
-		
 		System.out.println("----------");
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		for( ; ; )
+		{
+			System.out.println("hello");
+		}
 		
 	}
 
