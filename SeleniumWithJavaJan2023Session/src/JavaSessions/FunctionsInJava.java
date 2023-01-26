@@ -4,7 +4,7 @@ package JavaSessions;
 
 public class FunctionsInJava 
 {
-	//functions cant be created inside a function
+	//functions can't be created inside a function
 	//functions are parallel to each other
 	
 	public static void main(String[] args) 
@@ -41,7 +41,8 @@ public class FunctionsInJava
 		System.out.println("Manish");
 	}
 	
-	public void total() {
+	public void total() 
+	{
 		System.out.println("Total Method");
 		int a=10;
 		int b=20;
@@ -59,14 +60,12 @@ public class FunctionsInJava
 	
 		return z;
 	}
-	
 	public String getTrainerName() 
 	{
 		System.out.println("get trainer name");
 		String name="Manish";
 		int i=100;
 		return name;
-		
 	}
 	
 	//3. some input and some return
@@ -75,5 +74,5 @@ public class FunctionsInJava
 		int sum=a+b;
 		return sum;
 	}
-
+	
 }
