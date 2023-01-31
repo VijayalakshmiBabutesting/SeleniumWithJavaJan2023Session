@@ -110,22 +110,6 @@ public class ArrayListConcept {
 		for(Object obj : empData) {
 			System.out.println(obj);
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 
 }
