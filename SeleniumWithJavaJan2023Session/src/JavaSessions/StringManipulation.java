@@ -121,38 +121,7 @@ public class StringManipulation {
 		
 		int amountVal=Integer.parseInt(amount);
 		System.out.println(amountVal+50+10);//3060
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	
 	}
 
 }
