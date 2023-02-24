@@ -13,13 +13,21 @@ public class CarTest {
 		BMW.wheels();//static methods
 		b.engine();
 		
-		
+		System.out.println("-------");
 		Car c=new Car();
 		c.start();
 		c.stop();
 		c.refuel();
 		Car.wheels();//static methods
 		c.engine();
+		System.out.println("-------");
+		//Top Casting
+		Car c1=new BMW();//child class object referred by parent class reference variable
+		c1.start();
+		c1.stop();
+		
+		
+		
 		
 		
 	}
