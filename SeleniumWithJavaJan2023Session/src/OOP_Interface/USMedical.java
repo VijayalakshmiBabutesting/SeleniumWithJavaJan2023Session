@@ -5,6 +5,7 @@ public interface USMedical {
 	
 	//No method body
 	//only method declaration --method prototype
+	//cannot create the object of an interface
 
 	public void orthoServices();
 	

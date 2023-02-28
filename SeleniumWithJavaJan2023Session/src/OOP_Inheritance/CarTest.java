@@ -21,14 +21,22 @@ public class CarTest {
 		Car.wheels();//static methods
 		c.engine();
 		System.out.println("-------");
+		
+		
 		//Top Casting
 		Car c1=new BMW();//child class object referred by parent class reference variable
-		c1.start();
-		c1.stop();
+		c1.start();//overridden
+		c1.stop();//inheritance
+		c1.refuel();//inheritance
+		//c1.autoparking();-->reference type check
 		
 		
+		Vehicle v=new Vehicle();
+		v.engine();
 		
 		
+		Vehicle v1=new BMW();
+		v1.engine();
 		
 	}
 
