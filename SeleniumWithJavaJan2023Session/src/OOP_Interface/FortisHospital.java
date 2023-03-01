@@ -72,5 +72,17 @@ public class FortisHospital extends CentralizedHospital
 	public void neuroServices() {
 		System.out.println("FH--neuroServices");
 	}
+	//WHO
+	@Override
+	public void covidTest() {
+		System.out.println("FH---covidTest");
+		
+	}
+
+	@Override
+	public void pandemicControl() {
+		System.out.println("FH---pandemicControl");
+		
+	}
 	
 }

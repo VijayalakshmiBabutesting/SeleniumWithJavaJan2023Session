@@ -17,6 +17,9 @@ public class TestHospital {
 		fh.pediaServices();
 		fh.oncologyervices();
 		fh.pathology();
+		USMedical.minFee();
+		System.out.println(USMedical.admission_fee);
+		//USMedical.admission_fee=100;
 		
 		//USMedical us=new USMedical(); not possible
 		
