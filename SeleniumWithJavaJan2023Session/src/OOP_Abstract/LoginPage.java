@@ -7,8 +7,6 @@ public class LoginPage extends Page {
 		System.out.println("LP--Contructor");
 	}
 	
-	
-	
 	@Override
 	public void title() {
 		System.out.println("LP--title");
