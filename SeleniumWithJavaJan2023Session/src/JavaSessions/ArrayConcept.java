@@ -22,7 +22,7 @@ public class ArrayConcept {
 		i[1]=20;
 		i[2]=30;
 		i[3]=40;
-		//i[4]=50;ArrayIndexOutOfBoundsException:
+		i[4]=50;ArrayIndexOutOfBoundsException:
 		
 		System.out.println(i[0]);
 		System.out.println(i[3]);
