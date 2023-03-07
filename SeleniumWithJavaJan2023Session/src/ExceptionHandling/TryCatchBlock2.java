@@ -2,22 +2,32 @@
 package ExceptionHandling;
 
 public class TryCatchBlock2 {
-
+	
+	String name="Tom";	
 	public static void main(String[] args) {
 
-	System.out.println("Hello Testing");
+		System.out.println("Hello Testing");
 	
-	try
-	{
-	int i=9/0;
-	}
+		TryCatchBlock2 obj=new TryCatchBlock2();
 	
-	catch(Exception e)
-	{
-		System.out.println("some exception is coming...");
-		System.out.println(e.getMessage());
+		obj=null;
 		
-	}
+		try {
+			int i=9/3;//ArithmeticException
+			System.out.println(obj.name);//NullPointerException
+			}
+		catch(NullPointerException e) {
+			System.out.println("NPE is coming");
+		}
+		catch(ArithmeticException e) {
+			System.out.println("AME is coming");
+		}
+//		catch(Exception e) {
+//			System.out.println("Exception is coming");
+//		}
+	
+		System.out.println("after null pointer");
+				
 }
 
 }
