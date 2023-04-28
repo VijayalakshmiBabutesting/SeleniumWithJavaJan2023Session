@@ -3,17 +3,19 @@ package SeleniumSessions;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DifferentLocators {
 
+	static WebDriver driver;
 	public static void main(String[] args) {
 
 		WebDriverManager.chromedriver().setup();
-		WebDriver driver=new ChromeDriver();
-		driver.get("https://www.freshworks.com/");
+		driver=new ChromeDriver();
+		driver.get("https://app.hubspot.com/login");
 		
 		//1. id: unique
 		//2. name: not unique
@@ -42,10 +44,65 @@ public class DifferentLocators {
 		//driver.findElement(By.partialLinkText("Sign u")).click();
 		
 		//8. tagName
-		String h2_text=driver.findElement(By.tagName("h2")).getText();
-		System.out.println(h2_text);
+//		String h2_text=driver.findElement(By.tagName("h2")).getText();
+//		System.out.println(h2_text);
+//		
+//		System.out.println(driver.findElement(By.tagName("h1")).getText());
 		
-		System.out.println(driver.findElement(By.tagName("h1")).getText());
+//		String text=driver.findElement(By.linkText("Sign up")).getText();
+//		System.out.println(text);
+		
+		
+		//By header_text=By.tagName("h1");
+		By signup_link=By.linkText("Sign up");
+		String text=doGetText(signup_link);
+		System.out.println(text);
+		
+		//String header_txt=doGetText(header_text);
+		//System.out.println(header_txt);
+		
+		
+//		boolean b=driver.findElement(By.id("username")).isDisplayed();
+//		
+//		if(b) {
+//			System.out.println("username is present");
+//		}
+//		
+//		else {
+//			System.out.println("user name is not present");
+//		}
+		
+		By emailId=By.id("username");
+		
+		if(doIsDisplayed(emailId)) {
+			System.out.println("user name is present");
+			doSendKeys(emailId, "test@gmail.com");
+		}
+		if(doIsDisplayed(signup_link)) {
+			System.out.println("sign up link is present");
+			doClick(signup_link);
+		}
+		
+		
 	}
-
+	public static WebElement getElement(By locator) {
+		return driver.findElement(locator);
+	}
+	
+	public static String doGetText(By locator) {
+		return getElement(locator).getText();
+	}
+	
+	public static boolean doIsDisplayed(By locator) {
+		return getElement(locator).isDisplayed();
+	}
+		
+	public static void doSendKeys(By locator, String value) {
+		getElement(locator).sendKeys(value);
+	}
+	
+	public static void doClick(By locator) {
+		getElement(locator).click();
+	}
+	
 }
