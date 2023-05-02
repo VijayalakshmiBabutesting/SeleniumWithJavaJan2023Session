@@ -62,12 +62,4 @@ public class ElementUtil {
 		return getElement(locator).isDisplayed();
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
 }
