@@ -1,6 +1,9 @@
 //April 13-2023-P1
 package SeleniumSessions;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -61,5 +64,42 @@ public class ElementUtil {
 	public  boolean doIsDisplayed(By locator) {
 		return getElement(locator).isDisplayed();
 	}
+	/***
+	 * 
+	 * @param tagName
+	 * @return this returns the size of particular type of element type on a page
+	 */
+	public int getElementsCount(String tagName) {
+		return driver.findElements(By.tagName(tagName)).size();
+	}
+	
+	/***
+	 * 
+	 * @param tagName
+	 * @param attributeName
+	 * @returns the values of a particular attribute for a particular element type 
+	 */
+	public List<String> getAttributesList(String tagName, String attributeName) {
+	
+	List<String> attrList=new ArrayList<String>();
+		List<WebElement> elementList=driver.findElements(By.tagName(tagName));
+		for(WebElement e : elementList) {
+			String text=e.getAttribute(attributeName);
+			attrList.add(text);
+	}
+		
+	return attrList;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }
