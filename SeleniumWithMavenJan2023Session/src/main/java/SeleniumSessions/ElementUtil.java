@@ -26,6 +26,16 @@ public class ElementUtil {
 	/***
 	 * 
 	 * @param locator
+	 * @return this returns a list of web elements
+	 */
+	public  List<WebElement> getElements(By locator) {
+		return driver.findElements(locator);
+	}
+	
+	
+	/***
+	 * 
+	 * @param locator
 	 * @returns a web element
 	 */
 	public  WebElement getElement(By locator) {
@@ -91,6 +101,27 @@ public class ElementUtil {
 	return attrList;
 	}
 	
+	/***
+	 * This method clicks on an element from a list.
+	 * @param locator
+	 * @param linkText
+	 */
+	public void doClickFromList(By locator, String linkText) {
+		
+		List<WebElement> footerList=getElements(locator);
+		
+		for(int i=0; i<footerList.size(); i++) {
+		String text=footerList.get(i).getText();
+		System.out.println(text);
+		if(text.equals(linkText)) {
+			footerList.get(i).click();
+			break;
+			}			
+		}
+		
+	}
+	
+}	
 	
 	
 	
@@ -98,8 +129,4 @@ public class ElementUtil {
 	
 	
 	
-	
-	
-	
-	
-}
+
