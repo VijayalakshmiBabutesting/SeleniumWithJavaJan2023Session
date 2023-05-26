@@ -19,6 +19,10 @@ public class FileUploadPopUp {
 
 		WebElement chooseFile = driver.findElement(By.name("upfile"));// don't click the element
 		chooseFile.sendKeys("/Users/mchugh/Desktop/Tracker.xlsx");// path of the file
+		Thread.sleep(2000);
+
+		chooseFile.clear(); // to remove the file
+
 	}
 
 }

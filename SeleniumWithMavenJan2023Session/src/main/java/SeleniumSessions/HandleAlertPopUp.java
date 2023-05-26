@@ -32,7 +32,7 @@ public class HandleAlertPopUp {
 		// alert.accept();//accept
 		alert.dismiss();
 
-		driver.switchTo().defaultContent();// switches to webpage
+		driver.switchTo().defaultContent();// switches to web page
 
 	}
 
