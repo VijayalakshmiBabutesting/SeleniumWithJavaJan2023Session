@@ -16,14 +16,14 @@ public class OrangeHRMForm {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.orangehrm.com/contact-sales/");
-		driver.getTitle();
-		WebElement firstName=driver.findElement(By.id("Form_getForm_FullName"));
-		firstName.sendKeys("Manish Chugh");
-		driver.findElement(By.id("Form_getForm_Contact")).sendKeys("687 323 2342");
-		
-		WebElement OrangeHRMLink=driver.findElement(By.linkText("OrangeHRM"));
-		OrangeHRMLink.click();
-		
+		System.out.println(driver.getTitle());
+//		WebElement firstName=driver.findElement(By.id("Form_getForm_FullName"));
+//		firstName.sendKeys("Manish Chugh");
+//		driver.findElement(By.id("Form_getForm_Contact")).sendKeys("687 323 2342");
+//		
+//		WebElement OrangeHRMLink=driver.findElement(By.linkText("OrangeHRM"));
+//		OrangeHRMLink.click();
+//		
 	}
 
 }
