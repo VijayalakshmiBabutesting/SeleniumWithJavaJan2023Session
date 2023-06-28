@@ -63,6 +63,12 @@ public class JavaScriptUtil {
 
 	}
 
+	public void sendKeysUsingWithClassName(String classs, String value) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("document.getElementByClassName('" + classs + "').value='" + value + "'");
+
+	}
+
 	public void scrollPageDown() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
