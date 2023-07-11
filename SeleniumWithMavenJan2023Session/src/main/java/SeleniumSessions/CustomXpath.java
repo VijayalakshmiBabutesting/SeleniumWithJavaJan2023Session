@@ -84,6 +84,22 @@ public class CustomXpath {
 		// input[starts-with(@id, 'username')]
 		// input[starts-with(@id, 'user')]
 		// input[starts-with(@id, 'name')] -> incorrect
+
+		// parent to child:
+
+		// direct child:
+		// //div[@class='private-form__input-wrapper']/input[@id='username']
+		// div/div - 16(only direct child)
+
+		// indirect child
+		// div//div - 26 (direct+Indirect)
+
+		// child to parent:
+		// backward traversing in xpath
+		// input[@id='username']/..
+		// input[@id='username']/../../../../../../../../../..
+		// input[@id='username']//parent::div
+
 	}
 
 }
