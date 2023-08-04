@@ -1,14 +1,22 @@
 //April 13-2023-P1
 package SeleniumSessions;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ElementUtil {
 
@@ -291,6 +299,42 @@ public class ElementUtil {
 
 			}
 		}
+	}
+
+	// *************************** wait utils********************************
+
+	public WebElement waitForElementToBeLoaded(By locator, int timeOut) {
+		WebDriverWait wait = new WebDriverWait(driver, timeOut);
+		return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+	}
+
+	public void waitForTitleToBePresent(String titleValue, int timeOut) {
+		WebDriverWait wait = new WebDriverWait(driver, timeOut);
+		wait.until(ExpectedConditions.titleIs(titleValue));
+	}
+
+	public void waitForTitleToBePresent(String titleValue, int timeOut, int pollingTime) {
+		WebDriverWait wait = new WebDriverWait(driver, timeOut, pollingTime);
+		wait.until(ExpectedConditions.titleIs(titleValue));
+	}
+
+	public Alert WaitForAlertToBePresent(int timeOut) {
+		WebDriverWait wait = new WebDriverWait(driver, timeOut);
+		return wait.until(ExpectedConditions.alertIsPresent());
+	}
+
+	public Boolean waitForURL(String urlValue, int timeOut) {
+		WebDriverWait wait = new WebDriverWait(driver, timeOut);
+		return wait.until(ExpectedConditions.urlContains(urlValue));
+	}
+
+	public WebElement waitForElementWithFluentWait(By locator, int timeOut, int pollingTime) {
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(timeOut))
+				.pollingEvery(Duration.ofSeconds(pollingTime)).ignoring(NoSuchElementException.class)
+				.ignoring(StaleElementReferenceException.class);
+
+		return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+
 	}
 
 }
