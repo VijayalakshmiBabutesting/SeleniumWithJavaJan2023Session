@@ -337,4 +337,36 @@ public class ElementUtil {
 
 	}
 
+	public WebElement retryingElement(By locator) {
+
+		WebElement element = null;
+		int attempts = 0;
+
+		while (attempts < 30) {
+
+			try {
+				element = driver.findElement(locator);
+				break;
+
+			} catch (NoSuchElementException e) {
+				try {
+					Thread.sleep(500);// ms
+				} catch (InterruptedException e1) {
+				}
+			}
+
+			catch (StaleElementReferenceException e) {
+				try {
+					Thread.sleep(500);// ms
+				} catch (InterruptedException e1) {
+				}
+
+				System.out.println("Element is not found in attempt : " + attempts);
+			}
+			attempts++;
+		}
+
+		return element;
+	}
+
 }
