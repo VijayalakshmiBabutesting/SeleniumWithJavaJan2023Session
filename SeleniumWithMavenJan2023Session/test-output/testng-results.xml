@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-28T22:33:30 EDT" name="Default suite" finished-at="2023-08-28T22:33:30 EDT" duration-ms="36">
+    <groups>
+    </groups>
+    <test started-at="2023-08-28T22:33:30 EDT" name="Default test" finished-at="2023-08-28T22:33:30 EDT" duration-ms="36">
+      <class name="TestNGSessions.TestNGBasics">
+        <test-method is-config="true" signature="connectDB()[pri:0, instance:TestNGSessions.TestNGBasics@609db43b]" started-at="2023-08-28T22:33:30 EDT" name="connectDB" finished-at="2023-08-28T22:33:30 EDT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectDB -->
+        <test-method is-config="true" signature="createUserInDB()[pri:0, instance:TestNGSessions.TestNGBasics@609db43b]" started-at="2023-08-28T22:33:30 EDT" name="createUserInDB" finished-at="2023-08-28T22:33:30 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserInDB -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:TestNGSessions.TestNGBasics@609db43b]" started-at="2023-08-28T22:33:30 EDT" name="launchBrowser" finished-at="2023-08-28T22:33:30 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:TestNGSessions.TestNGBasics@609db43b]" started-at="2023-08-28T22:33:30 EDT" name="loginToApp" finished-at="2023-08-28T22:33:30 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="checkUserProfile()[pri:0, instance:TestNGSessions.TestNGBasics@609db43b]" started-at="2023-08-28T22:33:30 EDT" name="checkUserProfile" finished-at="2023-08-28T22:33:30 EDT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUserProfile -->
+        <test-method is-config="true" signature="loginOut()[pri:0, instance:TestNGSessions.TestNGBasics@609db43b]" started-at="2023-08-28T22:33:30 EDT" name="loginOut" finished-at="2023-08-28T22:33:30 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOut -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGSessions.TestNGBasics@609db43b]" started-at="2023-08-28T22:33:30 EDT" name="closeBrowser" finished-at="2023-08-28T22:33:30 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="deleteUserFromDB()[pri:0, instance:TestNGSessions.TestNGBasics@609db43b]" started-at="2023-08-28T22:33:30 EDT" name="deleteUserFromDB" finished-at="2023-08-28T22:33:30 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUserFromDB -->
+        <test-method is-config="true" signature="disconnectDB()[pri:0, instance:TestNGSessions.TestNGBasics@609db43b]" started-at="2023-08-28T22:33:30 EDT" name="disconnectDB" finished-at="2023-08-28T22:33:30 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disconnectDB -->
+      </class> <!-- TestNGSessions.TestNGBasics -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
