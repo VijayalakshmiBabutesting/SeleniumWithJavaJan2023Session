@@ -1,49 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-28T22:33:30 EDT" name="Default suite" finished-at="2023-08-28T22:33:30 EDT" duration-ms="36">
+  <suite started-at="2023-08-31T22:37:53 EDT" name="Default suite" finished-at="2023-08-31T22:38:00 EDT" duration-ms="7064">
     <groups>
     </groups>
-    <test started-at="2023-08-28T22:33:30 EDT" name="Default test" finished-at="2023-08-28T22:33:30 EDT" duration-ms="36">
-      <class name="TestNGSessions.TestNGBasics">
-        <test-method is-config="true" signature="connectDB()[pri:0, instance:TestNGSessions.TestNGBasics@609db43b]" started-at="2023-08-28T22:33:30 EDT" name="connectDB" finished-at="2023-08-28T22:33:30 EDT" duration-ms="6" status="PASS">
+    <test started-at="2023-08-31T22:37:53 EDT" name="Default test" finished-at="2023-08-31T22:38:00 EDT" duration-ms="7064">
+      <class name="com.my.tests.AmazonTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.my.tests.AmazonTest@157853da]" started-at="2023-08-31T22:37:53 EDT" name="setUp" finished-at="2023-08-31T22:37:57 EDT" duration-ms="4602" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- connectDB -->
-        <test-method is-config="true" signature="createUserInDB()[pri:0, instance:TestNGSessions.TestNGBasics@609db43b]" started-at="2023-08-28T22:33:30 EDT" name="createUserInDB" finished-at="2023-08-28T22:33:30 EDT" duration-ms="1" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="amazonTitleTest()[pri:1, instance:com.my.tests.AmazonTest@157853da]" started-at="2023-08-31T22:37:57 EDT" name="amazonTitleTest" finished-at="2023-08-31T22:37:57 EDT" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createUserInDB -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:TestNGSessions.TestNGBasics@609db43b]" started-at="2023-08-28T22:33:30 EDT" name="launchBrowser" finished-at="2023-08-28T22:33:30 EDT" duration-ms="0" status="PASS">
+        </test-method> <!-- amazonTitleTest -->
+        <test-method signature="amazonURLTest()[pri:2, instance:com.my.tests.AmazonTest@157853da]" started-at="2023-08-31T22:37:57 EDT" name="amazonURLTest" finished-at="2023-08-31T22:37:57 EDT" duration-ms="40" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:TestNGSessions.TestNGBasics@609db43b]" started-at="2023-08-28T22:33:30 EDT" name="loginToApp" finished-at="2023-08-28T22:33:30 EDT" duration-ms="0" status="PASS">
+        </test-method> <!-- amazonURLTest -->
+        <test-method signature="mobilesLinkPresentTest()[pri:3, instance:com.my.tests.AmazonTest@157853da]" started-at="2023-08-31T22:37:57 EDT" name="mobilesLinkPresentTest" finished-at="2023-08-31T22:37:59 EDT" duration-ms="2008" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AGC02ZJ1MULVDQ', ip: 'fe80:0:0:0:ec:c1a2:df6a:c4ee%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.5', java.version: '17.0.3'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 15.6.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 21G531, safari:platformVersion: 12.6.5, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 4627CF5A-5C8A-4311-8430-40CFF2316DFB
+*** Element info: {Using=link text, value=Mobiless}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: 
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AGC02ZJ1MULVDQ', ip: 'fe80:0:0:0:ec:c1a2:df6a:c4ee%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.5', java.version: '17.0.3'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 15.6.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 21G531, safari:platformVersion: 12.6.5, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 4627CF5A-5C8A-4311-8430-40CFF2316DFB
+*** Element info: {Using=link text, value=Mobiless}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.my.tests.AmazonTest.mobilesLinkPresentTest(AmazonTest.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method signature="checkUserProfile()[pri:0, instance:TestNGSessions.TestNGBasics@609db43b]" started-at="2023-08-28T22:33:30 EDT" name="checkUserProfile" finished-at="2023-08-28T22:33:30 EDT" duration-ms="6" status="PASS">
+        </test-method> <!-- mobilesLinkPresentTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.my.tests.AmazonTest@157853da]" started-at="2023-08-31T22:37:59 EDT" name="tearDown" finished-at="2023-08-31T22:38:00 EDT" duration-ms="343" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkUserProfile -->
-        <test-method is-config="true" signature="loginOut()[pri:0, instance:TestNGSessions.TestNGBasics@609db43b]" started-at="2023-08-28T22:33:30 EDT" name="loginOut" finished-at="2023-08-28T22:33:30 EDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginOut -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGSessions.TestNGBasics@609db43b]" started-at="2023-08-28T22:33:30 EDT" name="closeBrowser" finished-at="2023-08-28T22:33:30 EDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="deleteUserFromDB()[pri:0, instance:TestNGSessions.TestNGBasics@609db43b]" started-at="2023-08-28T22:33:30 EDT" name="deleteUserFromDB" finished-at="2023-08-28T22:33:30 EDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteUserFromDB -->
-        <test-method is-config="true" signature="disconnectDB()[pri:0, instance:TestNGSessions.TestNGBasics@609db43b]" started-at="2023-08-28T22:33:30 EDT" name="disconnectDB" finished-at="2023-08-28T22:33:30 EDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- disconnectDB -->
-      </class> <!-- TestNGSessions.TestNGBasics -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.my.tests.AmazonTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

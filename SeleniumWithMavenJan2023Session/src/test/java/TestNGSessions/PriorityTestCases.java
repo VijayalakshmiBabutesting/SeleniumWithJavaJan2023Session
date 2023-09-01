@@ -14,6 +14,7 @@ public class PriorityTestCases {
 	@Test
 	public void bTest() {
 		System.out.println("b test");
+		int i = 9 / 0;
 	}
 
 	@Test(priority = 3)
