@@ -49,7 +49,7 @@ public class AmazonTest {
 	public void mobilesLinkPresentTest() {
 		// boolean b = driver.findElement(By.linkText("Mobiles")).isDisplayed();
 		// Assert.assertTrue(b);
-		Assert.assertTrue(driver.findElement(By.linkText("Mobiless")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.linkText("Mobiles")).isDisplayed());
 
 	}
 
