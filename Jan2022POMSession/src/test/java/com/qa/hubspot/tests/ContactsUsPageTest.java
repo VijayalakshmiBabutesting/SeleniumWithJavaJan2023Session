@@ -1,5 +1,7 @@
 package com.qa.hubspot.tests;
 
-public class ContactsUsPageTest {
+import com.qa.hubspot.base.BaseTest;
+
+public class ContactsUsPageTest extends BaseTest {
 
 }
