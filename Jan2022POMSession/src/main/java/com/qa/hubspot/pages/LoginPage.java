@@ -22,4 +22,21 @@ public class LoginPage extends BasePage {
 		this.driver = driver;
 	}
 
+	// 3. Page actions: features(Behaviour) of the page in form of methods
+
+	public String getLoginPageTitle() {
+		return driver.getTitle();
+	}
+
+	public boolean isSignUpLinkExist() {
+		return driver.findElement(signUpLink).isDisplayed();
+	}
+
+	public void doLogin(String un, String pwd) {
+		System.out.println("Login with : " + un + "and" + pwd);
+		driver.findElement(emailId).sendKeys(un);
+		driver.findElement(password).sendKeys(pwd);
+		driver.findElement(loginButton).click();
+
+	}
 }
