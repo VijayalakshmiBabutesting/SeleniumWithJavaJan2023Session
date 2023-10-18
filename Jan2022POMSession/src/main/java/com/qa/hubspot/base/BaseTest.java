@@ -3,19 +3,21 @@ package com.qa.hubspot.base;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
+import com.qa.hubspot.pages.HomePage;
 import com.qa.hubspot.pages.LoginPage;
 
 public class BaseTest {
 
 	public BasePage basePage;
 	public LoginPage loginPage;
+	public HomePage homePage;
 	public Properties prop;
 	public WebDriver driver;
 
-	@BeforeMethod
+	@BeforeTest
 	public void setUp() {
 
 		basePage = new BasePage();
@@ -23,11 +25,12 @@ public class BaseTest {
 		String browser = prop.getProperty("browser");
 		driver = basePage.init_driver(browser); // chrome or firefox
 		loginPage = new LoginPage(driver);
-		driver.get(prop.getProperty("url"));
-
+		driver.get(prop.getProperty("url"));// login page
+		// cant write code here to login so that the user is able to navigate to the
+		// homepage
 	}
 
-	@AfterMethod
+	@AfterTest
 	public void tearDown() {
 		driver.quit();
 	}

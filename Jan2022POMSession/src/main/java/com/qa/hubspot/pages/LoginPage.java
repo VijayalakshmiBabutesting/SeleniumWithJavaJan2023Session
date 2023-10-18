@@ -32,11 +32,14 @@ public class LoginPage extends BasePage {
 		return driver.findElement(signUpLink).isDisplayed();
 	}
 
-	public void doLogin(String un, String pwd) {
+	public HomePage doLogin(String un, String pwd) {
 		System.out.println("Login with : " + un + "and" + pwd);
 		driver.findElement(emailId).sendKeys(un);
 		driver.findElement(password).sendKeys(pwd);
 		driver.findElement(loginButton).click();
 
+		return new HomePage(driver);
+
 	}
+
 }
