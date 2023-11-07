@@ -1,45 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-07T22:16:13 EDT" name="Test automation regression suite" finished-at="2023-09-07T22:16:42 EDT" duration-ms="29635">
+  <suite started-at="2023-10-19T21:11:35 EDT" name="Test automation regression suite" finished-at="2023-10-19T21:11:54 EDT" duration-ms="19083">
     <groups>
     </groups>
-    <test started-at="2023-09-07T22:16:13 EDT" name="Amazon Test" finished-at="2023-09-07T22:16:42 EDT" duration-ms="29635">
-      <class name="com.my.tests.AmazonTestWithBeforeMethod">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.my.tests.AmazonTestWithBeforeMethod@6bf0219d]" started-at="2023-09-07T22:16:13 EDT" name="setUp" finished-at="2023-09-07T22:16:19 EDT" duration-ms="6312" status="PASS">
+    <test started-at="2023-10-19T21:11:35 EDT" name="Rediff Test" finished-at="2023-10-19T21:11:50 EDT" duration-ms="15131">
+      <class name="com.my.tests.RediffTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.my.tests.RediffTest@865dd6]" started-at="2023-10-19T21:11:35 EDT" name="setUp" finished-at="2023-10-19T21:11:40 EDT" duration-ms="4989" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="amazonTitleTest()[pri:1, instance:com.my.tests.AmazonTestWithBeforeMethod@6bf0219d]" started-at="2023-09-07T22:16:19 EDT" name="amazonTitleTest" finished-at="2023-09-07T22:16:21 EDT" duration-ms="1989" status="PASS">
+        <test-method signature="rediffTitleTest()[pri:1, instance:com.my.tests.RediffTest@865dd6]" started-at="2023-10-19T21:11:40 EDT" name="rediffTitleTest" finished-at="2023-10-19T21:11:42 EDT" duration-ms="2078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rediffTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.my.tests.RediffTest@865dd6]" started-at="2023-10-19T21:11:42 EDT" name="tearDown" finished-at="2023-10-19T21:11:43 EDT" duration-ms="995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.my.tests.RediffTest@865dd6]" started-at="2023-10-19T21:11:43 EDT" name="setUp" finished-at="2023-10-19T21:11:47 EDT" duration-ms="4195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="rediffURLTest()[pri:2, instance:com.my.tests.RediffTest@865dd6]" started-at="2023-10-19T21:11:47 EDT" name="rediffURLTest" finished-at="2023-10-19T21:11:48 EDT" duration-ms="1536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rediffURLTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.my.tests.RediffTest@865dd6]" started-at="2023-10-19T21:11:48 EDT" name="tearDown" finished-at="2023-10-19T21:11:50 EDT" duration-ms="1312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.my.tests.RediffTest -->
+    </test> <!-- Rediff Test -->
+    <test started-at="2023-10-19T21:11:35 EDT" name="Amazon Test" finished-at="2023-10-19T21:11:54 EDT" duration-ms="19083">
+      <class name="com.my.tests.AmazonTestWithBeforeMethod">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.my.tests.AmazonTestWithBeforeMethod@6bf0219d]" started-at="2023-10-19T21:11:35 EDT" name="setUp" finished-at="2023-10-19T21:11:39 EDT" duration-ms="3910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="amazonTitleTest()[pri:1, instance:com.my.tests.AmazonTestWithBeforeMethod@6bf0219d]" started-at="2023-10-19T21:11:39 EDT" name="amazonTitleTest" finished-at="2023-10-19T21:11:40 EDT" duration-ms="1245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amazonTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.my.tests.AmazonTestWithBeforeMethod@6bf0219d]" started-at="2023-09-07T22:16:21 EDT" name="tearDown" finished-at="2023-09-07T22:16:24 EDT" duration-ms="2674" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.my.tests.AmazonTestWithBeforeMethod@6bf0219d]" started-at="2023-10-19T21:11:40 EDT" name="tearDown" finished-at="2023-10-19T21:11:42 EDT" duration-ms="1824" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.my.tests.AmazonTestWithBeforeMethod@6bf0219d]" started-at="2023-09-07T22:16:24 EDT" name="setUp" finished-at="2023-09-07T22:16:30 EDT" duration-ms="6302" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.my.tests.AmazonTestWithBeforeMethod@6bf0219d]" started-at="2023-10-19T21:11:42 EDT" name="setUp" finished-at="2023-10-19T21:11:45 EDT" duration-ms="3453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="amazonURLTest()[pri:2, instance:com.my.tests.AmazonTestWithBeforeMethod@6bf0219d]" started-at="2023-09-07T22:16:30 EDT" name="amazonURLTest" finished-at="2023-09-07T22:16:32 EDT" duration-ms="2107" status="PASS">
+        <test-method signature="amazonURLTest()[pri:2, instance:com.my.tests.AmazonTestWithBeforeMethod@6bf0219d]" started-at="2023-10-19T21:11:45 EDT" name="amazonURLTest" finished-at="2023-10-19T21:11:46 EDT" duration-ms="1212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amazonURLTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.my.tests.AmazonTestWithBeforeMethod@6bf0219d]" started-at="2023-09-07T22:16:32 EDT" name="tearDown" finished-at="2023-09-07T22:16:34 EDT" duration-ms="2065" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.my.tests.AmazonTestWithBeforeMethod@6bf0219d]" started-at="2023-10-19T21:11:46 EDT" name="tearDown" finished-at="2023-10-19T21:11:48 EDT" duration-ms="1617" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.my.tests.AmazonTestWithBeforeMethod@6bf0219d]" started-at="2023-09-07T22:16:34 EDT" name="setUp" finished-at="2023-09-07T22:16:38 EDT" duration-ms="4160" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.my.tests.AmazonTestWithBeforeMethod@6bf0219d]" started-at="2023-10-19T21:11:48 EDT" name="setUp" finished-at="2023-10-19T21:11:51 EDT" duration-ms="3064" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="mobilesLinkPresentTest()[pri:3, instance:com.my.tests.AmazonTestWithBeforeMethod@6bf0219d]" started-at="2023-09-07T22:16:38 EDT" name="mobilesLinkPresentTest" finished-at="2023-09-07T22:16:40 EDT" duration-ms="1978" status="PASS">
+        <test-method signature="mobilesLinkPresentTest()[pri:3, instance:com.my.tests.AmazonTestWithBeforeMethod@6bf0219d]" started-at="2023-10-19T21:11:51 EDT" name="mobilesLinkPresentTest" finished-at="2023-10-19T21:11:52 EDT" duration-ms="872" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mobilesLinkPresentTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.my.tests.AmazonTestWithBeforeMethod@6bf0219d]" started-at="2023-09-07T22:16:40 EDT" name="tearDown" finished-at="2023-09-07T22:16:42 EDT" duration-ms="1997" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.my.tests.AmazonTestWithBeforeMethod@6bf0219d]" started-at="2023-10-19T21:11:52 EDT" name="tearDown" finished-at="2023-10-19T21:11:54 EDT" duration-ms="1850" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

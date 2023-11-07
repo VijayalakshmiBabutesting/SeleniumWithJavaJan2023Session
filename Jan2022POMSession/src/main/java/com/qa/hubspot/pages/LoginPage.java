@@ -33,7 +33,7 @@ public class LoginPage extends BasePage {
 	}
 
 	public HomePage doLogin(String un, String pwd) {
-		System.out.println("Login with : " + un + "and" + pwd);
+		System.out.println("Login with : " + un + " and " + pwd);
 		driver.findElement(emailId).sendKeys(un);
 		driver.findElement(password).sendKeys(pwd);
 		driver.findElement(loginButton).click();

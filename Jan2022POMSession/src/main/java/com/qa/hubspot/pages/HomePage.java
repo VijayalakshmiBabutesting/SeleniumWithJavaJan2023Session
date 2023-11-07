@@ -22,6 +22,12 @@ public class HomePage extends BasePage {
 	// 3. Page actions: features(Behaviour) of the page in form of methods
 
 	public String getHomePageTitle() {
+		try {
+			Thread.sleep(30000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		;
 		return driver.getTitle();
 	}
 

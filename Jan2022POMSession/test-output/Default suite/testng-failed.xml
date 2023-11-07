@@ -3,13 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.hubspot.tests.LoginPageTest">
+      <class name="com.qa.hubspot.tests.HomePageTest">
         <methods>
+          <include name="verifyhomePageHeaderTest"/>
           <include name="setUp"/>
-          <include name="verifyLoginPageTitleTest"/>
+          <include name="verifyAccountNameTest"/>
+          <include name="homePageSetUp"/>
           <include name="tearDown"/>
+          <include name="homePageTitleTest"/>
+          <include name="verifySettingsIconTest"/>
         </methods>
-      </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
+      </class> <!-- com.qa.hubspot.tests.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
